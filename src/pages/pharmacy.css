@@ -1,0 +1,1477 @@
+/* =========================================
+   PHARMACY PAGE
+========================================= */
+
+.pharmacy-page {
+  width: 100%;
+  overflow: hidden;
+
+  background: var(--cream);
+  color: var(--forest);
+}
+
+
+/* =========================================
+   SHARED
+========================================= */
+
+.pharmacy-eyebrow {
+  margin: 0 0 22px;
+
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+
+  color: var(--forest);
+}
+
+.card-eyebrow {
+  margin: 0 0 10px;
+
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  color: var(--forest);
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.pharmacy-hero {
+  min-height: 88vh;
+
+  display: flex;
+  align-items: center;
+
+  padding: 120px 8%;
+
+  background:
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(145, 166, 137, 0.32),
+      transparent 30%
+    ),
+    var(--cream);
+}
+
+.pharmacy-hero-inner {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.pharmacy-hero h1 {
+  margin: 0 0 45px;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(65px, 9vw, 125px);
+  font-weight: 400;
+  line-height: 0.86;
+  letter-spacing: -6px;
+
+  color: var(--forest);
+}
+
+.pharmacy-intro {
+  max-width: 700px;
+
+  margin: 0 0 18px;
+
+  font-size: 20px;
+  line-height: 1.75;
+
+  color: var(--muted);
+}
+
+.pharmacy-intro.secondary {
+  max-width: 650px;
+
+  font-size: 16px;
+}
+
+.pharmacy-scroll {
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  margin-top: 60px;
+}
+
+.pharmacy-scroll span {
+  font-size: 22px;
+  color: var(--brown);
+}
+
+.pharmacy-scroll p {
+  margin: 0;
+
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: var(--forest);
+}
+
+
+/* =========================================
+   JATC EDUCATION
+========================================= */
+
+.pharmacy-education {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  min-height: 750px;
+
+  background: var(--cream);
+
+  overflow: hidden;
+}
+
+
+/* =========================================
+   TEXT
+========================================= */
+
+.education-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 100px 10%;
+}
+
+
+.education-content h2 {
+  margin: 20px 0 40px;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(60px, 6vw, 90px);
+
+  font-weight: 400;
+
+  line-height: 0.88;
+
+  letter-spacing: -4px;
+
+  color: var(--forest);
+}
+
+
+.education-school {
+  margin-bottom: 30px;
+}
+
+
+.education-school h3 {
+  margin: 0 0 7px;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 23px;
+
+  font-weight: 400;
+
+  color: var(--forest);
+}
+
+
+.education-school p {
+  margin: 0;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  color: var(--brown);
+}
+
+
+.education-copy {
+  max-width: 560px;
+}
+
+
+.education-copy p {
+  margin: 0 0 18px;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+
+  color: var(--muted);
+}
+
+
+/* =========================================
+   PHOTO AREA
+========================================= */
+
+.education-photo-area {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-height: 750px;
+
+  background: var(--sage-light);
+
+  overflow: hidden;
+}
+
+
+/* subtle oversized year */
+
+.photo-year {
+  position: absolute;
+
+  top: 40px;
+  right: 50px;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 130px;
+
+  line-height: 1;
+
+  color: rgba(41, 72, 59, 0.08);
+}
+
+
+/* =========================================
+   PHOTO FRAME
+========================================= */
+
+.photo-frame {
+  position: relative;
+
+  width: min(500px, 72%);
+
+  padding: 14px;
+
+  background: #f8f5eb;
+
+  box-shadow:
+    0 30px 70px rgba(41, 72, 59, 0.22);
+
+  transform: rotate(3deg);
+
+  z-index: 2;
+
+  transition: transform 0.35s ease;
+}
+
+
+.photo-frame:hover {
+  transform: rotate(0deg) translateY(-8px);
+}
+
+
+.photo-frame img {
+  display: block;
+
+  width: 100%;
+
+  height: 470px;
+
+  object-fit: cover;
+}
+
+
+/* =========================================
+   PHOTO NOTE
+========================================= */
+
+.photo-note {
+  position: absolute;
+
+  right: 8%;
+
+  bottom: 100px;
+
+  z-index: 3;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+
+  padding: 16px 20px;
+
+  background: var(--forest);
+
+  color: white;
+
+  box-shadow:
+    0 15px 30px rgba(41, 72, 59, 0.18);
+
+  transform: rotate(-3deg);
+}
+
+
+.photo-note span:first-child {
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 22px;
+}
+
+
+.photo-note span:last-child {
+  font-size: 8px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
+
+  color: var(--sage-light);
+}
+
+/* =========================================
+   HOSA COMPETITION
+========================================= */
+
+.hosa-section {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  min-height: 750px;
+
+  background: var(--cream);
+}
+
+
+/* =========================================
+   PHOTO SIDE
+========================================= */
+
+.hosa-photo-side {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 80px;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 35% 40%,
+      rgba(255, 255, 255, 0.35),
+      transparent 45%
+    ),
+    var(--sage-light);
+}
+
+
+/* =========================================
+   PHOTO
+========================================= */
+
+.hosa-photo-wrapper {
+  position: relative;
+
+  width: min(540px, 90%);
+
+  padding: 12px;
+
+  background: #f8f5eb;
+
+  box-shadow:
+    0 25px 60px rgba(41, 72, 59, 0.18);
+
+  transform: rotate(-2deg);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.hosa-photo-wrapper:hover {
+  transform: rotate(0deg) translateY(-5px);
+
+  box-shadow:
+    0 35px 70px rgba(41, 72, 59, 0.22);
+}
+
+.hosa-photo {
+  display: block;
+
+  width: 100%;
+  height: 480px;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  border: none;
+}
+
+
+/* =========================================
+   PHOTO CAPTION
+========================================= */
+
+.hosa-photo-caption {
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  width: min(540px, 90%);
+
+  margin-top: 25px;
+
+  padding-left: 5px;
+
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 3px;
+
+  color: var(--forest);
+}
+
+.caption-line {
+  width: 60px;
+  height: 1px;
+
+  background: rgba(41, 72, 59, 0.35);
+}
+
+
+/* =========================================
+   BOTANICAL DETAIL
+========================================= */
+
+.hosa-botanical {
+  position: absolute;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 150px;
+
+  font-weight: 400;
+
+  color: rgba(41, 72, 59, 0.08);
+
+  pointer-events: none;
+}
+
+.botanical-left {
+  top: 40px;
+  left: 35px;
+
+  transform: rotate(-25deg);
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.hosa-content {
+  align-self: center;
+
+  max-width: 650px;
+
+  padding: 100px 9%;
+}
+
+.hosa-content .pharmacy-eyebrow {
+  margin-bottom: 25px;
+
+  color: var(--forest);
+}
+
+.hosa-content h2 {
+  margin: 0 0 40px;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(55px, 5.5vw, 82px);
+
+  font-weight: 400;
+
+  line-height: 0.9;
+
+  letter-spacing: -3px;
+
+  color: var(--forest);
+}
+
+
+.hosa-content > p:not(.pharmacy-eyebrow) {
+  max-width: 600px;
+
+  margin: 0 0 22px;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 17px;
+
+  line-height: 1.65;
+
+  color: var(--muted);
+}
+
+
+/* =========================================
+   DIVIDER
+========================================= */
+
+.hosa-divider {
+  width: 100%;
+
+  height: 1px;
+
+  margin: 45px 0 20px;
+
+  background: rgba(41, 72, 59, 0.15);
+}
+
+
+/* =========================================
+   EVENT CARDS
+========================================= */
+
+.hosa-events {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 18px;
+
+  margin-top: 20px;
+}
+
+
+.hosa-event {
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+
+  min-height: 105px;
+
+  padding: 22px;
+
+  border: 1px solid rgba(41, 72, 59, 0.18);
+
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.25);
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease;
+}
+
+
+.hosa-event:hover {
+  transform: translateY(-4px);
+
+  background: var(--sage-light);
+
+  border-color: rgba(41, 72, 59, 0.3);
+}
+
+
+/* =========================================
+   EVENT ICON
+========================================= */
+
+.hosa-event-icon {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: var(--forest);
+
+  color: var(--sage-light);
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 18px;
+}
+
+
+/* =========================================
+   EVENT TEXT
+========================================= */
+
+.hosa-event h3 {
+  margin: 0 0 7px;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 21px;
+
+  font-weight: 400;
+
+  color: var(--forest);
+}
+
+
+.hosa-event p {
+  margin: 0;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+
+  color: var(--muted);
+}
+
+/* =========================================
+   TIMELINE INTRO
+========================================= */
+
+.timeline-intro {
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  padding: 140px 8% 100px;
+
+  text-align: center;
+}
+
+.timeline-intro h2 {
+  margin: 0 0 35px;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(55px, 7vw, 95px);
+  font-weight: 400;
+  line-height: 0.87;
+}
+
+.timeline-intro > p:last-child {
+  max-width: 650px;
+
+  margin: 0 auto;
+
+  font-size: 17px;
+  line-height: 1.8;
+
+  color: var(--muted);
+}
+
+
+/* =========================================
+   TIMELINE
+========================================= */
+
+.pharmacy-timeline {
+  position: relative;
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 50px 8% 150px;
+}
+
+.pharmacy-timeline::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+  left: 28%;
+
+  width: 1px;
+
+  background: rgba(41, 72, 59, 0.2);
+}
+
+.timeline-item {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 22% 12px 1fr;
+
+  gap: 35px;
+
+  margin-bottom: 90px;
+}
+
+.timeline-year {
+  text-align: right;
+
+  padding-top: 5px;
+}
+
+.timeline-year span {
+  display: block;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 34px;
+
+  color: var(--forest);
+}
+
+.timeline-year small {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 16px;
+  font-style: italic;
+
+  color: var(--brown);
+}
+
+.timeline-dot {
+  position: relative;
+  z-index: 2;
+
+  width: 12px;
+  height: 12px;
+
+  margin-top: 12px;
+
+  border-radius: 50%;
+
+  background: var(--brown);
+
+  box-shadow:
+    0 0 0 7px var(--cream);
+}
+
+.timeline-card {
+  padding: 38px;
+
+  border-radius: 22px;
+
+  background: var(--sage-light);
+
+  transition: transform 0.25s ease;
+}
+
+.timeline-card:hover {
+  transform: translateY(-4px);
+}
+
+.timeline-card h3 {
+  margin: 0 0 8px;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.timeline-date {
+  margin: 0 0 25px;
+
+  font-size: 11px;
+
+  color: var(--muted);
+}
+
+.timeline-description {
+  max-width: 650px;
+
+  margin: 0;
+
+  font-size: 15px;
+  line-height: 1.8;
+
+  color: var(--muted);
+}
+
+.timeline-tags {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-top: 28px;
+}
+
+.timeline-tags span {
+  padding: 7px 12px;
+
+  border: 1px solid rgba(41, 72, 59, 0.2);
+
+  border-radius: 30px;
+
+  font-size: 10px;
+
+  color: var(--forest);
+}
+
+
+/* =========================================
+   TIMELINE FEATURED
+========================================= */
+
+.timeline-item.featured .timeline-card {
+  background: var(--cream);
+
+  border: 1px solid rgba(41, 72, 59, 0.12);
+}
+
+.timeline-highlight {
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+
+  margin: 30px 0;
+
+  padding: 22px;
+
+  border-left: 3px solid var(--brown);
+
+  background: rgba(145, 166, 137, 0.15);
+}
+
+.timeline-highlight strong {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.timeline-highlight p {
+  margin: 0;
+
+  font-size: 13px;
+  line-height: 1.5;
+
+  color: var(--muted);
+}
+
+
+/* =========================================
+   HOSPITAL TIMELINE CARD
+========================================= */
+
+.timeline-item.dark .timeline-card {
+  background: var(--forest);
+
+  color: white;
+}
+
+.timeline-item.dark .card-eyebrow {
+  color: var(--sage-light);
+}
+
+.timeline-item.dark .timeline-date,
+.timeline-item.dark .timeline-description {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.hospital-skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  margin-top: 35px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.hospital-skills div {
+  padding: 25px 15px 0 0;
+}
+
+.hospital-skills strong {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.hospital-skills span {
+  display: block;
+
+  font-size: 10px;
+  line-height: 1.5;
+
+  color: rgba(255, 255, 255, 0.55);
+}
+
+
+/* =========================================
+   UNIVERSITY / LATEST
+========================================= */
+
+.timeline-item.latest {
+  margin-bottom: 0;
+}
+
+.timeline-item.latest .timeline-card {
+  padding: 50px;
+
+  background: var(--forest);
+
+  color: white;
+}
+
+.timeline-item.latest .card-eyebrow {
+  color: var(--sage-light);
+}
+
+.timeline-item.latest .timeline-date {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.timeline-item.latest .timeline-description {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+
+/* STATS */
+
+.pharmacy-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  margin: 40px 0;
+
+  padding: 35px 0;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.pharmacy-stat {
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 0 20px;
+
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.pharmacy-stat:first-child {
+  padding-left: 0;
+}
+
+.pharmacy-stat:last-child {
+  border-right: none;
+}
+
+.pharmacy-stat strong {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 43px;
+  font-weight: 400;
+
+  color: var(--sage-light);
+}
+
+.pharmacy-stat span {
+  font-size: 10px;
+  line-height: 1.5;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.university-description {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 35px;
+}
+
+.university-description p {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 1.7;
+
+  color: rgba(255, 255, 255, 0.65);
+}
+
+
+/* =========================================
+   LESSONS
+========================================= */
+
+.lessons-section {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+
+  gap: 90px;
+
+  padding: 130px 8%;
+
+  background: var(--sage-light);
+}
+
+.lessons-heading h2 {
+  margin: 0 0 30px;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(50px, 6vw, 80px);
+  font-weight: 400;
+  line-height: 0.88;
+}
+
+.lessons-heading > p:last-child {
+  max-width: 450px;
+
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 1.8;
+
+  color: var(--muted);
+}
+
+.lessons-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.lesson-card {
+  min-height: 220px;
+
+  padding: 30px;
+
+  border-top: 1px solid rgba(41, 72, 59, 0.18);
+}
+
+.lesson-card span {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+
+  color: var(--brown);
+}
+
+.lesson-card h3 {
+  margin: 35px 0 12px;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.lesson-card p {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 1.7;
+
+  color: var(--muted);
+}
+
+
+/* =========================================
+   FUTURE
+========================================= */
+
+.pharmacy-future {
+  padding: 140px 8%;
+
+  text-align: center;
+
+  background: var(--cream);
+}
+
+.pharmacy-future h2 {
+  margin: 0 0 35px;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(55px, 7vw, 95px);
+  font-weight: 400;
+  line-height: 0.87;
+}
+
+.pharmacy-future > p:not(.pharmacy-eyebrow) {
+  max-width: 700px;
+
+  margin: 0 auto 18px;
+
+  font-size: 17px;
+  line-height: 1.8;
+
+  color: var(--muted);
+}
+
+.future-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+  margin-top: 50px;
+}
+
+.future-links a {
+  padding: 12px 20px;
+
+  border: 1px solid rgba(41, 72, 59, 0.25);
+  border-radius: 30px;
+
+  text-decoration: none;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+
+  color: var(--forest);
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.future-links a:hover {
+  background: var(--forest);
+
+  color: white;
+}
+
+
+/* =========================================
+   CLOSING
+========================================= */
+
+.pharmacy-closing {
+  padding: 120px 8%;
+
+  text-align: center;
+
+  background: var(--forest);
+
+  color: white;
+}
+
+.pharmacy-closing > span {
+  font-size: 30px;
+
+  color: var(--sage-light);
+}
+
+.pharmacy-closing h2 {
+  margin: 25px 0 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(55px, 7vw, 100px);
+  font-weight: 400;
+  line-height: 0.87;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 750px) {
+
+  .pharmacy-hero {
+    min-height: auto;
+
+    padding: 90px 25px;
+  }
+
+  .pharmacy-hero h1 {
+    letter-spacing: -3px;
+  }
+
+
+  .pharmacy-education {
+    grid-template-columns: 1fr;
+
+    gap: 55px;
+
+    padding: 85px 25px;
+  }
+
+
+  .education-card {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    padding: 28px;
+  }
+
+
+  .hosa-section {
+    grid-template-columns: 1fr;
+  }
+
+
+  .hosa-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 70px;
+
+  background: var(--sage);
+}
+
+.hosa-photo-wrapper {
+  position: relative;
+
+  width: min(480px, 100%);
+
+  transform: rotate(-2deg);
+}
+
+.hosa-photo {
+  display: block;
+
+  width: 100%;
+  height: 560px;
+
+  object-fit: cover;
+
+  border-radius: 8px;
+
+  box-shadow:
+    0 25px 60px rgba(41, 72, 59, 0.25);
+
+  border: 10px solid var(--cream);
+}
+
+.hosa-photo-label {
+  position: absolute;
+
+  right: -25px;
+  bottom: -25px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px 25px;
+
+  background: var(--forest);
+
+  color: white;
+
+  box-shadow:
+    0 15px 35px rgba(41, 72, 59, 0.2);
+
+  transform: rotate(2deg);
+}
+
+.hosa-photo-label span {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 32px;
+}
+
+.hosa-photo-label small {
+  margin-top: 3px;
+
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  color: var(--sage-light);
+} 
+
+
+  .hosa-content {
+    padding: 75px 25px;
+  }
+
+
+  .hosa-events {
+    grid-template-columns: 1fr;
+  }
+
+
+  .timeline-intro {
+    padding: 90px 25px 65px;
+  }
+
+
+  .pharmacy-timeline {
+    padding: 30px 25px 100px;
+  }
+
+
+  .pharmacy-timeline::before {
+    left: 19px;
+  }
+
+
+  .timeline-item {
+    grid-template-columns: 12px 1fr;
+
+    gap: 25px;
+
+    margin-bottom: 60px;
+  }
+
+
+  .timeline-year {
+    grid-column: 1;
+    grid-row: 1;
+
+    position: absolute;
+
+    top: -35px;
+    left: 35px;
+
+    display: flex;
+    align-items: baseline;
+
+    gap: 7px;
+
+    text-align: left;
+  }
+
+
+  .timeline-year span {
+    font-size: 25px;
+  }
+
+
+  .timeline-year small {
+    font-size: 13px;
+  }
+
+
+  .timeline-dot {
+    grid-column: 1;
+    grid-row: 1;
+
+    margin-top: 8px;
+  }
+
+
+  .timeline-card {
+    grid-column: 2;
+    grid-row: 1;
+
+    margin-top: 35px;
+
+    padding: 28px;
+  }
+
+
+  .timeline-card h3 {
+    font-size: 29px;
+  }
+
+
+  .timeline-item.latest .timeline-card {
+    padding: 30px;
+  }
+
+
+  .pharmacy-stats {
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+  }
+
+
+  .pharmacy-stat {
+    padding: 0;
+
+    border-right: none;
+  }
+
+
+  .university-description {
+    grid-template-columns: 1fr;
+  }
+
+
+  .hospital-skills {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+
+  .hospital-skills div {
+    padding: 0;
+  }
+
+
+  .lessons-section {
+    grid-template-columns: 1fr;
+
+    gap: 60px;
+
+    padding: 90px 25px;
+  }
+
+
+  .lessons-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .pharmacy-future {
+    padding: 95px 25px;
+  }
+
+
+  .pharmacy-closing {
+    padding: 90px 25px;
+  }
+
+  @media (max-width: 750px) {
+
+
+  .hosa-visual {
+    min-height: auto;
+
+    padding: 60px 25px;
+  }
+
+  .hosa-photo-wrapper {
+    width: 90%;
+  }
+
+  .hosa-photo {
+    height: 450px;
+  }
+
+  .hosa-photo-label {
+    right: -10px;
+    bottom: -20px;
+  }
+
+}
+
+}

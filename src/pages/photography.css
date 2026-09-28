@@ -1,0 +1,459 @@
+/* =========================================
+   PHOTOGRAPHY PAGE
+========================================= */
+
+.photography {
+  background: #f7f5f0;
+  color: #242321;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.photography-hero {
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  padding: 120px 8%;
+  background: #f7f5f0;
+}
+
+.photography-hero-text {
+  max-width: 850px;
+}
+
+.photography-hero h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(4rem, 8vw, 8rem);
+  font-weight: 400;
+  line-height: 0.95;
+  margin: 25px 0 35px;
+  letter-spacing: -0.04em;
+}
+
+.photography-hero p:not(.section-label) {
+  max-width: 560px;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #66615a;
+}
+
+
+/* =========================================
+   LABELS
+========================================= */
+
+.photography .section-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+  color: #77716a;
+}
+
+
+/* =========================================
+   INTRODUCTION
+========================================= */
+
+.photography-introduction {
+  padding: 120px 8%;
+  background: #ebe7df;
+}
+
+.photo-intro-label {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 70px;
+}
+
+.photo-intro-label span {
+  font-family: Georgia, serif;
+  font-size: 1.2rem;
+}
+
+.photo-intro-label p {
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+}
+
+.photo-intro-content {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 8%;
+  align-items: center;
+}
+
+.photo-intro-text h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(2.8rem, 5vw, 5rem);
+  line-height: 1;
+  font-weight: 400;
+  margin-bottom: 35px;
+}
+
+.photo-intro-text p {
+  max-width: 480px;
+  color: #66615a;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+
+/* =========================================
+   FEATURED PHOTO
+========================================= */
+
+.featured-photo {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  aspect-ratio: 5 / 5;
+  background: #ddd7cd;
+}
+
+.featured-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.7s ease;
+}
+
+.featured-photo:hover img {
+  transform: scale(1.04);
+}
+
+.photo-overlay {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 35px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background: linear-gradient(
+    transparent,
+    rgba(0, 0, 0, 0.75)
+  );
+}
+
+.photo-overlay span:first-child {
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+}
+
+.photo-overlay h3 {
+  font-family: Georgia, serif;
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 8px 0;
+}
+
+.photo-overlay p {
+  margin: 0;
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+.photo-expand {
+  font-size: 2rem;
+}
+
+
+/* =========================================
+   COLLECTIONS
+========================================= */
+
+.photo-collection {
+  padding: 120px 8%;
+}
+
+.collection-heading {
+  display: grid;
+  grid-template-columns: 1fr 0.7fr;
+  gap: 10%;
+  align-items: end;
+  margin-bottom: 55px;
+}
+
+.collection-heading h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(2.8rem, 5vw, 5rem);
+  font-weight: 400;
+  line-height: 1;
+  margin-top: 20px;
+}
+
+.collection-heading > p {
+  color: #77716a;
+  line-height: 1.8;
+  max-width: 400px;
+}
+
+
+/* =========================================
+   PHOTO GRID
+========================================= */
+
+.photo-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.film-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery-photo {
+  position: relative;
+  border: none;
+  padding: 0;
+  overflow: hidden;
+  cursor: pointer;
+  background: #ddd7cd;
+  aspect-ratio: 4 / 5;
+}
+
+.gallery-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.gallery-photo:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-photo-overlay {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 25px;
+  text-align: left;
+  color: white;
+  background: linear-gradient(
+    transparent,
+    rgba(0, 0, 0, 0.8)
+  );
+  opacity: 0;
+  transform: translateY(10px);
+  transition: 0.35s ease;
+}
+
+.gallery-photo:hover .gallery-photo-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.gallery-photo-overlay span {
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.gallery-photo-overlay h3 {
+  font-family: Georgia, serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin: 7px 0 0;
+}
+
+.gallery-arrow {
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+  font-size: 1.5rem !important;
+}
+
+
+/* =========================================
+   EMPTY GALLERY PLACEHOLDER
+========================================= */
+
+.empty-gallery {
+  min-height: 280px;
+  border: 1px dashed #c8c0b5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #999188;
+}
+
+.empty-gallery span {
+  font-size: 2rem;
+  font-weight: 200;
+  margin-bottom: 15px;
+}
+
+.empty-gallery p {
+  font-size: 0.85rem;
+}
+
+
+/* =========================================
+   CLOSING
+========================================= */
+
+.photography-closing {
+  padding: 180px 8%;
+  text-align: center;
+  background: #242321;
+  color: white;
+}
+
+.photography-closing h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(3rem, 7vw, 7rem);
+  font-weight: 400;
+  line-height: 0.95;
+  margin-top: 25px;
+}
+
+
+/* =========================================
+   FULL SCREEN PHOTO VIEWER
+========================================= */
+
+.photo-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(20, 19, 17, 0.96);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  animation: lightboxFade 0.25s ease;
+}
+
+@keyframes lightboxFade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.lightbox-content {
+  max-width: 1100px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lightbox-content img {
+  max-width: 100%;
+  max-height: 72vh;
+  object-fit: contain;
+  display: block;
+}
+
+.lightbox-caption {
+  width: 100%;
+  max-width: 700px;
+  color: white;
+  margin-top: 20px;
+}
+
+.lightbox-caption span {
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+.lightbox-caption h3 {
+  font-family: Georgia, serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin: 5px 0;
+}
+
+.lightbox-caption p {
+  margin: 0;
+  opacity: 0.7;
+  font-size: 0.9rem;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 25px;
+  right: 35px;
+  border: none;
+  background: none;
+  color: white;
+  font-size: 2.5rem;
+  cursor: pointer;
+  font-weight: 200;
+  line-height: 1;
+}
+
+.lightbox-close:hover {
+  opacity: 0.6;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 800px) {
+
+  .photography-hero {
+    min-height: 65vh;
+    padding: 90px 7%;
+  }
+
+  .photography-hero h1 {
+    font-size: 4rem;
+  }
+
+  .photo-intro-content {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .collection-heading {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .film-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .photo-lightbox {
+    padding: 25px;
+  }
+
+  .lightbox-content img {
+    max-height: 65vh;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .film-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .photography-hero h1 {
+    font-size: 3.2rem;
+  }
+
+  .photo-intro-text h2,
+  .collection-heading h2 {
+    font-size: 2.8rem;
+  }
+
+}
