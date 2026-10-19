@@ -2,8 +2,8 @@ import "./education.css";
 import collegePhoto from "../images/uofu.jpeg";
 import hanbok from "../images/hanbok.jpg";
 import incheon from "../images/incheoncampus.jpg";
-import cooking from "../images/cookingclass.jpg";
-import educationHero from "../images/education-hero.png";
+import cooking from "../images/cookingclass.JPG";
+import educationHero from "../images/education-hero.PNG";
 
 function Education() {
   return (

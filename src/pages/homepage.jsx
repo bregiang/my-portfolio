@@ -1,16 +1,16 @@
 import "./homepage.css";
-import heroImage from "../images/hero.jpg";
-import informationSystemsImage from "../images/information-systems.jpg";
-import photographyImage from "../images/photography.jpg";
+import heroImage from "../images/hero.JPG";
+import informationSystemsImage from "../images/information-systems.JPG";
+import photographyImage from "../images/photography.JPG";
 import marketingImage from "../images/marketing.jpg";
 import writingImage from "../images/writing.jpg";
 
 import skinIdentifierImage from "../images/skinidentifier.png";
-import japanImage from "../images/studyabroad.jpg";
+import japanImage from "../images/studyabroad.JPG";
 import marketingWorkImage from "../images/socialmedia.jpg";
 import writingWorkImage from "../images/writingimage.png";
-import pharmacyComp from "../images/pharmacycomp.jpg";
-import serviceImage from "../images/service.jpg";
+import pharmacyComp from "../images/pharmacycomp.JPG";
+import serviceImage from "../images/service.JPG";
 
 function Home() {
   return (

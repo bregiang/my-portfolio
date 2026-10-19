@@ -1,5 +1,5 @@
 import "./pharmacy.css";
-import jatcImage from "../images/jatc.jpg";
+import jatcImage from "../images/jatc.JPG";
 
 function Pharmacy() {
   return (

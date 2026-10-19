@@ -5,13 +5,13 @@ import skinIdentifierImage from "../images/skinidentifier.png";
 import skinIdentifierShot1 from "../images/skinidentifier1.png";
 import skinIdentifierShot2 from "../images/skinidentifier2.png";
 
-import japanImage from "../images/studyabroad.jpg";
+import japanImage from "../images/studyabroad.JPG";
 import marketingWorkImage from "../images/socialmedia.jpg";
 import writingWorkImage from "../images/writingimage.png";
-import pharmacyComp from "../images/pharmacycomp.jpg";
-import serviceImage from "../images/service.jpg";
+import pharmacyComp from "../images/pharmacycomp.JPG";
+import serviceImage from "../images/service.JPG";
 
-import hosaMain from "../images/hosaelevator.jpg";
+import hosaMain from "../images/hosaelevator.JPG";
 import hosaThree from "../images/HOSA.jpeg";
 import hosaFour from "../images/HOSA.jpeg";
 

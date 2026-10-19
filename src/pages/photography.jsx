@@ -1,12 +1,12 @@
 import { useState } from "react";
 import "./photography.css";
 
-import firstFilm from "../images/firstfilm.jpg";
+import firstFilm from "../images/firstfilm.JPG";
 import secondFilm from "../images/puerto.jpg";
-import thirdFilm from "../images/gato.jpg";
-import fourthFilm from "../images/puerto2.jpg";
-import fifthFilm from "../images/gato2.jpg";
-import sixthFilm from "../images/redrocks.jpg";
+import thirdFilm from "../images/gato.JPG";
+import fourthFilm from "../images/puerto2.JPG";
+import fifthFilm from "../images/gato2.JPG";
+import sixthFilm from "../images/redrocks.JPG";
 
 function Photography() {
   const [selectedPhoto, setSelectedPhoto] = useState(null);
